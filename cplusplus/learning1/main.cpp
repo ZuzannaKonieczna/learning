@@ -9,6 +9,6 @@ int main()
     cin >> a;
     cout << "Podaj liczbe cukierkow" << endl;
     cin >> b;
-    cout << "na jednego ucznia przypada " << a/b << endl;
+    cout << "na jednego ucznia przypada " << a/b << "cukierkow" << endl;
     return 0;
 }
