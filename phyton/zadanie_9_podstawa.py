@@ -1,0 +1,1 @@
+#Napisz program obliczający pierwiastek sześcienny z liczby podanej przez użytkownika.
