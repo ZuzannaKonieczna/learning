@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie</title>
+</head>
+<body>
+    <h1>ANKIETA</h1>
+    <hr>
+    <form name="formularz" action="zadanie.php" method="post">
+        Imię: <input type="text" name="imie"><br><br>
+        Nazwisko: <input type="text" name="nazw"><br><br>
+        Płeć <br>
+        <input type="radio" name="plec" value="mezczyzna">Mężczyzna
+        <input type="radio" name="plec" value="kobieta">Kobieta <br><br>
+        Zainteresowania:
+        <input type="checkbox" name="sport" value="1">Sport
+        <input type="checkbox" name="film" value="1">Film
+        <input type="checkbox" name="elektronika" value="1">Elektronika
+        <input type="checkbox" name="informatyka" value="1">Informatyka <br>
+        Szkoła:
+        <select name="szkola">
+            <option value="Podstawowa" selected>Podstawowa</option>
+            <option value="Liceum">Liceum</option>
+            <option value="Technikum">Technikum</option>
+            <option value="Zawodowa">Zawodówka</option>
+            <option value="Studia">Studia</option>
+        </select> <br>
+        Krótka informacja o sobie: <br>
+        <textarea name="o_sobie" rows="5" cols="40"></textarea><br>
+        <input type="submit" value="Wyślij dane">
+        <input type="reset" value="Zresetuj formularz">    
+    </form>
+</body>
+</html>

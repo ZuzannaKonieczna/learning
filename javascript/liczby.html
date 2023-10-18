@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function f1(){
+            var a = document.getElementById("a").value;
+            var b = document.getElementById("b").value;
+            document.getElementById("wynik").style.color="red";
+            if (a >b)
+            document.getElementById("wynik").innerHTML = a
+            
+        if (a < b)
+            document.getElementById("wynik").innerHTML = b
+        }
+    </script>
+</head>
+<body>
+    Podaj a:
+    <input id="a" type="number"> <br>
+    Podaj b:
+    <input id="b" type="number"><br><br>
+    <input type="button" onclick="f1();" value="Sprawdz">
+    <div id = "wynik"></div>
+
+</body>
+</html>
