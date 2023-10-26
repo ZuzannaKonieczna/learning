@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function f(){
+            if(check.checked==1){
+                document.getElementById('wynik').innerHTML="Dowieziemy ci pizze za darmo";
+            }
+            else{
+               var a = document.getElementById('km').value;
+               var cena = a*2;
+                document.getElementById("wynik").innerHTML ="Dostawa bedzie kosztować: " + cena +"zł";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Oblicz koszt dostawy</h1>
+    <input type="checkbox" id="check">Jestem z Zielonej Góry <br>
+    albo<br>
+    Podja liczbe kilometrów od Zielonej Góry
+    <input type="number" id="km"> <br>
+    <input type="button" onclick="f()" value="SPrawdź">
+    <div id="wynik" ></div>
+</body>
+</html>
