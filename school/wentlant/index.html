@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<meta charset="utf-8" />
+	
+	<script type="text/javascript">
+	
+		function sprawdz()
+		{
+			var liczba = document.getElementById("pole").value;
+			
+			if (liczba>0) document.getElementById("wynik").innerHTML="dodatnia";
+			else if (liczba<0) document.getElementById("wynik").innerHTML="ujemna";
+			else if (liczba==0) document.getElementById("wynik").innerHTML="zero";
+			else document.getElementById("wynik").innerHTML="to nie jest liczba.";
+
+			if (liczba%2 ==0) document.getElementById("wynik1").innerHTML="parzysta";
+			else if (liczba%2==1) document.getElementById("wynik1").innerHTML="nieparzysta";
+			
+		
+		}
+	
+	</script>
+</head>
+
+<body>
+
+	<input type="text" id="pole" />
+	<input type="submit" value="Sprawdź" onclick="sprawdz()"/>
+	
+	<div id="wynik">wpisz dane w pole i kliknij w "sprawdź"</div>
+	<div id = "wynik1"></div>
+
+</body>
+
+</html>

@@ -1,7 +1,6 @@
 x = int(input())
 
 if x<-1: 
-    print ("lol")
     y = 2*x
 elif(x==1):
     y = -10
