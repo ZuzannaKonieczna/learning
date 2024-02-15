@@ -9,9 +9,17 @@ for i in range(1,n):
     if (k < 0):
         k *=-1
         k += 5
-        print(i,round(k))
     else:
         k += 5
         k *= -1
-        print(i,round(k))
 print(round(gora))
+for i in range(1,n+1):
+    dol+= l
+    if (k < 0):
+        k*= -1 
+        k += 4
+    else:
+        k += 4
+        k*= -1
+print (round(dol))
+print(round(gora/dol, 2))
